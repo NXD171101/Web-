@@ -10,12 +10,6 @@
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
-<div class="banner">
-  <div class="container">
-    <p>Christmas orders are open. Message the shop on Facebook to get yours.</p>
-  </div>
-</div>
-
 <header class="nav">
   <div class="container nav__row">
     <a class="wordmark" href="#top" aria-label="Family Christmas Shop, home">Family Christmas Shop</a>
@@ -24,101 +18,104 @@
       <a href="#lights">Lights</a>
       <a href="#order">How to order</a>
     </nav>
-    <a class="btn btn--small" href="#range">Shop the range</a>
+    <a class="btn btn--primary btn--small" href="#range">Shop the range</a>
   </div>
 </header>
 
 <main id="main">
   <section class="hero" id="top">
-    <figure class="hero__photo" data-slot="hero" data-alt="The whole family on the sofa in matching Santa sweaters, hugging in front of the tree">
-      <img src="family_hug.jpg" width="720" height="1280" alt="A family of four in matching red Santa sweaters hugging on the sofa in front of a lit Christmas tree" fetchpriority="high">
-    </figure>
-    <div class="hero__scrim" aria-hidden="true"></div>
-    <div class="container hero__content">
-      <h1>Everybody in the same sweater.</h1>
-      <p class="lead">Thick warm knits, sized for mom, dad and the kids.</p>
-      <div class="hero__actions">
-        <a class="btn btn--primary" href="#range">Shop the sweaters</a>
-        <a class="btn btn--ghost" href="#lights">See the lights</a>
+    <div class="container hero__grid">
+      <div class="hero__text">
+        <h1>Everybody in the same sweater!</h1>
+        <p class="lead">Thick warm knits, sized for mom, dad and the kids.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#range">Shop the sweaters</a>
+          <a class="btn" href="#lights">See the lights</a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <figure class="diecut-photo tilt-l" data-slot="hero" data-alt="The whole family on the sofa in matching Santa sweaters, hugging in front of the tree">
+          <img src="family_hug.jpg" width="720" height="1280" alt="A family of four in matching red Santa sweaters hugging on the sofa in front of a lit Christmas tree" fetchpriority="high">
+        </figure>
+        <span class="tag">One design, sizes S to XL</span>
       </div>
     </div>
   </section>
 
   <section class="section range" id="range">
-    <div class="container head-block">
+    <div class="container">
       <h2>On the shelf this Christmas</h2>
+      <div class="bento bento--range">
+        <article class="tile tile--wide">
+          <figure class="diecut-photo" data-slot="product-family" data-alt="The matching family set worn together, mom, dad and both kids">
+            <img src="family_table.jpg" width="720" height="1280" alt="The family around the coffee table, all four in the matching Santa sweater" loading="lazy">
+          </figure>
+          <h3>The matching family set</h3>
+          <p>One red Santa knit, four family sizes.</p>
+        </article>
+        <article class="tile fill-pink note-tile">
+          <h3>More lands here first</h3>
+          <p>New pieces all season.</p>
+          <a class="note-link" href="#order">How ordering works</a>
+        </article>
+        <article class="tile">
+          <figure class="diecut-photo tilt-r" data-slot="product-santa" data-alt="The cream and red Santa and reindeer sweater, worn">
+            <img src="santa_sweater.jpg" width="720" height="1110" alt="A man laughing in the cream sweater patterned with Santa faces and gold reindeer" loading="lazy">
+          </figure>
+          <h3>Santa and reindeer knit</h3>
+          <p>Cream Santa faces, gold reindeer, deep bands.</p>
+        </article>
+        <article class="tile">
+          <figure class="diecut-photo" data-slot="product-beer" data-alt="The beer-belly Santa sweater, flat on a card">
+            <img src="beer_sweater.jpg" width="720" height="1280" alt="The beer-belly Santa sweater with two beer mugs, barrels on the sleeves and a Santa belt" loading="lazy">
+          </figure>
+          <h3>The beer-belly Santa</h3>
+          <p>Two mugs, one round belly.</p>
+        </article>
+        <article class="tile">
+          <figure class="diecut-photo tilt-l2" data-slot="product-lights" data-alt="The solar rope lights glowing on the porch and fence at night">
+            <img src="lights_night.jpg" width="720" height="1280" alt="A father and son looking at the house outlined in rainbow solar rope lights" loading="lazy">
+          </figure>
+          <h3>Solar rope lights</h3>
+          <p>Porch, fence and tree.</p>
+        </article>
+      </div>
     </div>
-    <ul class="rail" tabindex="0" aria-label="The shop range">
-      <li class="rail__item">
-        <figure class="photo" data-slot="product-family" data-alt="The matching family set worn together, mom, dad and both kids">
-          <img src="family_table.jpg" width="720" height="1280" alt="The family around the coffee table, all four in the matching Santa sweater" loading="lazy">
-        </figure>
-        <h3>The matching family set</h3>
-        <p>One red Santa knit, four family sizes.</p>
-      </li>
-      <li class="rail__item">
-        <figure class="photo" data-slot="product-santa" data-alt="The cream and red Santa and reindeer sweater, worn">
-          <img src="santa_sweater.jpg" width="720" height="1110" alt="A man laughing in the cream sweater patterned with Santa faces and gold reindeer" loading="lazy">
-        </figure>
-        <h3>Santa and reindeer knit</h3>
-        <p>Cream Santa faces, gold reindeer, deep bands.</p>
-      </li>
-      <li class="rail__item">
-        <figure class="photo" data-slot="product-beer" data-alt="The beer-belly Santa sweater, flat on a card">
-          <img src="beer_sweater.jpg" width="720" height="1280" alt="The beer-belly Santa sweater with two beer mugs, barrels on the sleeves and a Santa belt" loading="lazy">
-        </figure>
-        <h3>The beer-belly Santa</h3>
-        <p>Two mugs, one round belly.</p>
-      </li>
-      <li class="rail__item rail__item--note">
-        <h3>More lands here first</h3>
-        <p>New pieces all season.</p>
-        <a class="order-link" href="#order">How ordering works</a>
-      </li>
-      <li class="rail__item">
-        <figure class="photo" data-slot="product-lights" data-alt="The solar rope lights glowing on the porch and fence at night">
-          <img src="lights_night.jpg" width="720" height="1280" alt="A father and son looking at the house outlined in rainbow solar rope lights" loading="lazy">
-        </figure>
-        <h3>Solar rope lights</h3>
-        <p>Porch, fence and tree.</p>
-      </li>
-    </ul>
   </section>
 
-  <section class="section pinned" id="knit">
+  <section class="section knit" id="knit">
     <div class="container">
-      <div class="head-block">
-        <h2>Thick knit, matched on purpose</h2>
-      </div>
-      <div class="pinned__grid">
-        <figure class="photo pinned__photo" data-slot="knit-close" data-alt="The Santa knit up close, Santa faces and snowflakes in the weave">
-          <img src="knit_close.jpg" width="520" height="520" alt="The sweater knit up close, cream Santa faces and snowflakes woven into red and green bands" loading="lazy">
-        </figure>
-        <div class="pinned__panels">
-          <article>
-            <h3>Built for snow days</h3>
-            <p>Thick knit, real weight, cold evenings.</p>
-          </article>
-          <article>
-            <p class="panel__figure">S to XL</p>
-            <h3>Every size</h3>
-            <p>Adults and kids alike.</p>
-          </article>
-          <article>
-            <h3>Made for the photograph</h3>
-            <p>Bold pattern, read across the room.</p>
-          </article>
-          <article>
-            <h3>Room for seconds</h3>
-            <p>Crew neck and ribbed cuffs, loose at dinner.</p>
-          </article>
-        </div>
+      <h2>Thick knit, matched on purpose</h2>
+      <div class="bento bento--facts">
+        <article class="tile fill-pink tilt-l2">
+          <p class="figure">S to XL</p>
+          <h3>Every size</h3>
+          <p>Adults and kids alike.</p>
+        </article>
+        <article class="tile fill-ink tilt-r">
+          <h3>Built for snow days</h3>
+          <p>Thick knit, real weight, cold evenings.</p>
+        </article>
+        <article class="tile fill-lime tilt-l">
+          <h3>Room for seconds</h3>
+          <p>Crew neck, ribbed cuffs, loose at dinner.</p>
+        </article>
+        <article class="tile tile--photo">
+          <figure class="diecut-photo" data-slot="knit-close" data-alt="The Santa knit up close, Santa faces and snowflakes in the weave">
+            <img src="knit_close.jpg" width="520" height="520" alt="The sweater knit up close, cream Santa faces and snowflakes woven into red and green bands" loading="lazy">
+          </figure>
+          <h3>Made for the photograph</h3>
+          <p>Bold pattern, read across the room.</p>
+        </article>
       </div>
     </div>
   </section>
 
   <section class="section lights" id="lights">
     <div class="container split">
+      <figure class="diecut-photo tilt-r split__photo" data-slot="lights-fence" data-alt="Father and son wrapping the glowing rope light around the picket fence at dusk">
+        <img src="lights_fence.jpg" width="720" height="1280" alt="A father and son in matching sweaters wrapping the glowing rainbow rope light around a white picket fence" loading="lazy">
+      </figure>
       <div class="split__text">
         <h2>The porch, lit by the sun</h2>
         <p class="lead">A rope of rainbow light that charges all day and glows all evening.</p>
@@ -129,22 +126,27 @@
         </ul>
         <a class="btn btn--primary" href="#order">Order the lights</a>
       </div>
-      <figure class="photo split__photo" data-slot="lights-fence" data-alt="Father and son wrapping the glowing rope light around the picket fence at dusk">
-        <img src="lights_fence.jpg" width="720" height="1280" alt="A father and son in matching sweaters wrapping the glowing rainbow rope light around a white picket fence" loading="lazy">
-      </figure>
     </div>
   </section>
 
-  <section class="section band" id="order">
+  <section class="section order" id="order">
     <div class="container">
-      <div class="card">
-        <h2>Order through Facebook</h2>
-        <ol class="steps">
-          <li>Pick a design and your sizes.</li>
-          <li>Message the shop, or comment NOEL on a video.</li>          <li>We reply with price and shipping.</li>
-        </ol>
-        <p>Find the shop at <span class="fill" data-fill="facebook">Facebook page, name to come</span>. Nothing is paid until we confirm price and shipping.</p>
-      </div>
+      <h2>Order through Facebook</h2>
+      <ol class="steps">
+        <li class="step tilt-l2">
+          <span class="step__num">1</span>
+          <p>Pick a design and your sizes.</p>
+        </li>
+        <li class="step tilt-r">
+          <span class="step__num">2</span>
+          <p>Message the shop, or comment NOEL on a video.</p>
+        </li>
+        <li class="step tilt-l">
+          <span class="step__num">3</span>
+          <p>We reply with price and shipping.</p>
+        </li>
+      </ol>
+      <p class="order__note">Find the shop at <span class="fill" data-fill="facebook">Facebook page, name to come</span>. Nothing is paid until we confirm price and shipping.</p>
     </div>
   </section>
 </main>
